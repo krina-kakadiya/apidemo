@@ -18,7 +18,7 @@ class SendEmailTest extends Mailable
      */
     public function __construct()
     {
-        //
+        dd("sejdjdjd");
     }
 
     /**

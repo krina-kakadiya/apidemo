@@ -24,6 +24,15 @@ Route::get('/test', function () {
     dd("fireddd................");
 });
 
+Route::get('email-test', function(){
+
+    $details['email'] = 'your_email@gmail.com';
+
+    dispatch(new App\Jobs\SendEmailJob($details));
+
+    dd('done');
+});
+
 
 
 
